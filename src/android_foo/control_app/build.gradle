@@ -25,12 +25,14 @@
 */
 
 repositories {
-    mavenCentral()
+//    mavenCentral()
     mavenLocal()
 
     flatDir {
         dirs 'libs'
     }
+//    maven { url "https://jitpack.io" }
+    maven { url 'http://maven.oschina.net/content/groups/public/' }
     maven { url "https://jitpack.io" }
 }
 
@@ -60,10 +62,10 @@ dependencies {
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 27
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 23
+        minSdkVersion 23
+        targetSdkVersion 27
         multiDexEnabled true
         versionCode 1
         versionName "1.0"
